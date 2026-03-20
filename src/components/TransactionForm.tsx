@@ -29,7 +29,7 @@ function TransactionForm({ onAddTransaction }: TransactionFormProps) {
 		// after submit, reset the values to initial
 		setDescription("");
 		setAmount("");
-		setCategory("Food");
+		// setCategory("Food");  ---- resetting the category creates a bug where entering more than one income in a row stores all subsequent incomes in the "food" category
 	}
 
 	return (
