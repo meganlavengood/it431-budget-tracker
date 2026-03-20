@@ -33,9 +33,9 @@ const categoryClasses: Record<Category, string> = {
 // TODO 2: Update the function signature to accept props using your interface.
 
 function TransactionItem({ transaction, onDelete }: TransactionItemProps) {
-	const formatCurrency = (amount: number): string => {
-		return "$" + amount.toFixed(2);
-	};
+	// const formatCurrency = (amount: number): string => {
+	// 	return "$" + amount.toFixed(2);
+	// };
 
 	return (
 		<div className="transaction-item">

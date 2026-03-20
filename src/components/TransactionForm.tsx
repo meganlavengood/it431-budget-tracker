@@ -32,7 +32,7 @@ function TransactionForm({ onAddTransaction }: TransactionFormProps) {
 	//         - Calls onAddTransaction with the form values
 	//         - Resets the form fields back to their initial values
 
-	function handleSubmit(e) {
+	function handleSubmit(e: React.FormEvent) {
 		e.preventDefault();
 		const parsedAmount = parseFloat(amount);
 
